@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 version: "3"
 services:
     www:
@@ -37,3 +38,33 @@ services:
             MYSQL_ROOT_PASSWORD: test
 volumes:
     persistent:
+=======
+
+version: '3'
+
+services:
+  mysql:
+    image: mysql:5.7.28
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=database
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 8080:80
+    environment:
+      - PMA_HOST=mysql
+    depends_on:
+      - mysql
+
+volumes:
+  mysql_data:
+
+>>>>>>> 9cde4077192c5fb26a5e6b2214d2418c29e607a6
