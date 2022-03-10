@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -33,9 +34,44 @@
 </div>     
                                 </fieldset> 
                               </form>
+
                  </center>
-              </div>
-    
+              </div> 
+<?php
+$conn = mysqli_connect('db', 'user', 'test', 'myDb', 3306);
+mysqli_set_charset($conn, "utf8");
+$query = 'SELECT * From Alumno';
+$result = mysqli_query($conn, $query);
+?>
+    <table class="table">
+<thead class="thread-dark">
+<tr>
+<th scope="col">ID</th>
+<th scope="col">Nombre</th>
+<th scope="col">Apellido1</th>
+<th scope="col">Apellido2</th>
+<th scope="col">Candidato</th>
+</tr>
+</thead>
+<tbody>
+ <?php
+    //querys
+    $query=mysqli_query($conn,"SELECT * FROM `Alumno` WHERE delegado = 'candidato'");
+    while($row=mysqli_fetch_array($query)){
+
+
+
+    ?>
+<tr>
+<td><?=$row['ID']; ?></th>
+<td><?=$row['Nombre']; ?> </td>
+<td><?=$row['Apellido1']; ?> </td>
+<td><?=$row['Apellido2']; ?> </td>
+<td><?=$row['Delegado']; ?> </td>
+</tr>
+<?php } ?>
+</tbody>
+</table>
 
 
 
