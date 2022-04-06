@@ -1,0 +1,123 @@
+
+/usr/sbin/mysqld, Version: 8.0.16 (MySQL Community Server - GPL). started with:
+Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+2022-04-05T16:17:24.579680Z	    9 Query	select * from cliente
+LIMIT 0, 1000
+2022-04-05T16:17:24.614694Z	   10 Connect	root@192.168.0.28 on  using SSL/TLS
+2022-04-05T16:17:24.614766Z	   10 Connect	Access denied for user 'root'@'192.168.0.28' (using password: NO)
+2022-04-05T16:17:27.021124Z	   11 Connect	root@192.168.0.28 on  using SSL/TLS
+2022-04-05T16:17:27.021393Z	   11 Query	set autocommit=1
+2022-04-05T16:17:27.021678Z	   11 Query	SELECT current_user()
+2022-04-05T16:17:27.021978Z	   11 Query	SET CHARACTER SET utf8
+2022-04-05T16:17:27.022214Z	   11 Query	SET NAMES utf8
+2022-04-05T16:17:27.022470Z	   11 Query	SHOW SESSION VARIABLES LIKE 'sql_mode'
+2022-04-05T16:17:27.025985Z	   11 Query	SELECT CONNECTION_ID()
+2022-04-05T16:17:27.026368Z	   11 Query	show character set where charset = 'utf8mb4'
+2022-04-05T16:17:27.026889Z	   11 Query	SET NAMES 'utf8mb4'
+2022-04-05T16:17:27.027198Z	   11 Query	SHOW SESSION STATUS LIKE 'Ssl_cipher'
+2022-04-05T16:17:27.028333Z	   11 Query	USE `jardineria`
+2022-04-05T16:17:27.028539Z	   11 Query	set autocommit=1
+2022-04-05T16:17:27.028811Z	   11 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 9
+2022-04-05T16:17:27.032056Z	   11 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 17
+2022-04-05T16:17:27.033192Z	   11 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 17
+2022-04-05T16:17:27.035336Z	   11 Query	SHOW INDEX FROM `jardineria`.`cliente`
+2022-04-05T16:19:29.252802Z	    9 Query	explain select * from cliente
+2022-04-05T16:19:29.260838Z	   11 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 9
+2022-04-05T16:19:29.261659Z	   11 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 21
+2022-04-05T16:19:29.262181Z	   11 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 21
+2022-04-05T16:24:19.039673Z	    9 Query	explain select * from pedido
+2022-04-05T16:24:19.047773Z	   11 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 9
+2022-04-05T16:24:19.048515Z	   11 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 24
+2022-04-05T16:24:19.048974Z	   11 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 24
+/usr/sbin/mysqld, Version: 8.0.16 (MySQL Community Server - GPL). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+2022-04-05T16:35:19.433309Z	    7 Connect	
+2022-04-05T16:35:19.433403Z	    7 Query	SELECT @@skip_networking, @@skip_name_resolve, @@have_ssl='YES', @@ssl_key, @@ssl_ca, @@ssl_capath, @@ssl_cert, @@ssl_cipher, @@ssl_crl, @@ssl_crlpath, @@tls_version
+2022-04-05T16:35:19.436702Z	    7 Quit	
+2022-04-05T16:36:02.653062Z	    8 Connect	root@192.168.0.28 on  using SSL/TLS
+2022-04-05T16:36:02.653145Z	    8 Connect	Access denied for user 'root'@'192.168.0.28' (using password: NO)
+2022-04-05T16:36:05.411136Z	    9 Connect	root@192.168.0.28 on  using SSL/TLS
+2022-04-05T16:36:05.411530Z	    9 Query	set autocommit=1
+2022-04-05T16:36:05.411833Z	    9 Query	SELECT current_user()
+2022-04-05T16:36:05.412255Z	    9 Query	SET CHARACTER SET utf8
+2022-04-05T16:36:05.412895Z	    9 Query	SET NAMES utf8
+2022-04-05T16:36:05.413342Z	    9 Query	SET SQL_SAFE_UPDATES=1
+2022-04-05T16:36:05.413593Z	    9 Query	SELECT CONNECTION_ID()
+2022-04-05T16:36:05.414019Z	    9 Query	show character set where charset = 'utf8mb4'
+2022-04-05T16:36:05.416208Z	    9 Query	SET NAMES 'utf8mb4'
+2022-04-05T16:36:05.416686Z	    9 Query	SHOW SESSION STATUS LIKE 'Ssl_cipher'
+2022-04-05T16:36:05.419366Z	    9 Query	USE `jardineria`
+2022-04-05T16:36:05.419960Z	    9 Query	set autocommit=1
+2022-04-05T16:36:05.421453Z	    9 Query	explain select * from cliente
+2022-04-05T16:36:05.448408Z	   10 Connect	root@192.168.0.28 on  using SSL/TLS
+2022-04-05T16:36:05.448691Z	   10 Query	set autocommit=1
+2022-04-05T16:36:05.448942Z	   10 Query	SELECT current_user()
+2022-04-05T16:36:05.449256Z	   10 Query	SET CHARACTER SET utf8
+2022-04-05T16:36:05.449496Z	   10 Query	SET NAMES utf8
+2022-04-05T16:36:05.449763Z	   10 Query	SHOW SESSION VARIABLES LIKE 'sql_mode'
+2022-04-05T16:36:05.452818Z	   10 Query	SELECT CONNECTION_ID()
+2022-04-05T16:36:05.453170Z	   10 Query	show character set where charset = 'utf8mb4'
+2022-04-05T16:36:05.453658Z	   10 Query	SET NAMES 'utf8mb4'
+2022-04-05T16:36:05.453968Z	   10 Query	SHOW SESSION STATUS LIKE 'Ssl_cipher'
+2022-04-05T16:36:05.454941Z	   10 Query	USE `jardineria`
+2022-04-05T16:36:05.455196Z	   10 Query	set autocommit=1
+2022-04-05T16:36:05.455456Z	   10 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 9
+2022-04-05T16:36:05.458455Z	   10 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 13
+2022-04-05T16:36:05.459446Z	   10 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 13
+2022-04-05T16:36:13.989107Z	    9 Query	explain select * from pedido
+2022-04-05T16:36:13.997335Z	   10 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 9
+2022-04-05T16:36:13.998110Z	   10 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 16
+2022-04-05T16:36:13.998715Z	   10 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 16
+2022-04-05T16:36:55.125338Z	    9 Query	SET GLOBAL log_queries_not_using_indexes = 1
+/usr/sbin/mysqld, Version: 8.0.16 (MySQL Community Server - GPL). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+2022-04-05T16:37:22.058531Z	    7 Connect	
+2022-04-05T16:37:22.058628Z	    7 Query	SELECT @@skip_networking, @@skip_name_resolve, @@have_ssl='YES', @@ssl_key, @@ssl_ca, @@ssl_capath, @@ssl_cert, @@ssl_cipher, @@ssl_crl, @@ssl_crlpath, @@tls_version
+2022-04-05T16:37:22.064335Z	    7 Quit	
+2022-04-05T16:37:40.765586Z	    8 Connect	root@192.168.0.28 on  using SSL/TLS
+2022-04-05T16:37:40.765657Z	    8 Connect	Access denied for user 'root'@'192.168.0.28' (using password: NO)
+2022-04-05T16:37:43.079021Z	    9 Connect	root@192.168.0.28 on  using SSL/TLS
+2022-04-05T16:37:43.079420Z	    9 Query	set autocommit=1
+2022-04-05T16:37:43.079712Z	    9 Query	SELECT current_user()
+2022-04-05T16:37:43.080088Z	    9 Query	SET CHARACTER SET utf8
+2022-04-05T16:37:43.080360Z	    9 Query	SET NAMES utf8
+2022-04-05T16:37:43.080613Z	    9 Query	SET SQL_SAFE_UPDATES=1
+2022-04-05T16:37:43.080928Z	    9 Query	SELECT CONNECTION_ID()
+2022-04-05T16:37:43.081235Z	    9 Query	show character set where charset = 'utf8mb4'
+2022-04-05T16:37:43.082943Z	    9 Query	SET NAMES 'utf8mb4'
+2022-04-05T16:37:43.083326Z	    9 Query	SHOW SESSION STATUS LIKE 'Ssl_cipher'
+2022-04-05T16:37:43.085529Z	    9 Query	USE `jardineria`
+2022-04-05T16:37:43.085835Z	    9 Query	set autocommit=1
+2022-04-05T16:37:43.087356Z	    9 Query	select * from cliente
+LIMIT 0, 1000
+2022-04-05T16:37:43.152441Z	   10 Connect	root@192.168.0.28 on  using SSL/TLS
+2022-04-05T16:37:43.152862Z	   10 Query	set autocommit=1
+2022-04-05T16:37:43.153198Z	   10 Query	SELECT current_user()
+2022-04-05T16:37:43.153574Z	   10 Query	SET CHARACTER SET utf8
+2022-04-05T16:37:43.153827Z	   10 Query	SET NAMES utf8
+2022-04-05T16:37:43.154136Z	   10 Query	SHOW SESSION VARIABLES LIKE 'sql_mode'
+2022-04-05T16:37:43.157465Z	   10 Query	SELECT CONNECTION_ID()
+2022-04-05T16:37:43.157746Z	   10 Query	show character set where charset = 'utf8mb4'
+2022-04-05T16:37:43.158256Z	   10 Query	SET NAMES 'utf8mb4'
+2022-04-05T16:37:43.158571Z	   10 Query	SHOW SESSION STATUS LIKE 'Ssl_cipher'
+2022-04-05T16:37:43.159860Z	   10 Query	USE `jardineria`
+2022-04-05T16:37:43.160174Z	   10 Query	set autocommit=1
+2022-04-05T16:37:43.160497Z	   10 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 9
+2022-04-05T16:37:43.163580Z	   10 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 13
+2022-04-05T16:37:43.164608Z	   10 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 13
+2022-04-05T16:37:43.166731Z	   10 Query	SHOW INDEX FROM `jardineria`.`cliente`
+2022-04-05T16:37:48.018099Z	    9 Query	select * from pedido
+LIMIT 0, 1000
+2022-04-05T16:37:48.028037Z	   10 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 9
+2022-04-05T16:37:48.028834Z	   10 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 16
+2022-04-05T16:37:48.029288Z	   10 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 16
+2022-04-05T16:37:48.030588Z	   10 Query	SHOW INDEX FROM `jardineria`.`pedido`
+2022-04-05T16:44:38.574154Z	    9 Query	select * from cliente
+LIMIT 0, 1000
+2022-04-05T16:44:38.587560Z	   10 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 9
+2022-04-05T16:44:38.588315Z	   10 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 20
+2022-04-05T16:44:38.588774Z	   10 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 20
+2022-04-05T16:44:38.589964Z	   10 Query	SHOW INDEX FROM `jardineria`.`cliente`

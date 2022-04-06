@@ -1,0 +1,208 @@
+
+/usr/sbin/mysqld, Version: 8.0.16 (MySQL Community Server - GPL). started with:
+Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 8.0.16 (MySQL Community Server - GPL). started with:
+Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2022-03-31T20:23:40.445101Z
+# User@Host: root[root] @  [192.168.0.28]  Id:   140
+# Query_time: 13.172707  Lock_time: 0.000134 Rows_sent: 1000000  Rows_examined: 3000000
+use jardineria;
+SET timestamp=1648758207;
+select * from cliente union select * from cliente;
+# Time: 2022-03-31T20:23:40.456893Z
+# User@Host: root[root] @  [192.168.0.28]  Id:   139
+# Query_time: 0.000083  Lock_time: 0.000034 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1648758220;
+SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 51;
+# Time: 2022-03-31T20:23:40.457414Z
+# User@Host: root[root] @  [192.168.0.28]  Id:   139
+# Query_time: 0.000088  Lock_time: 0.000036 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1648758220;
+SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 51;
+# Time: 2022-03-31T20:23:58.198568Z
+# User@Host: root[root] @  [172.18.0.3]  Id:   187
+# Query_time: 0.000711  Lock_time: 0.000137 Rows_sent: 7  Rows_examined: 22
+SET timestamp=1648758238;
+SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`;
+# Time: 2022-03-31T20:23:58.202922Z
+# User@Host: root[root] @  [172.18.0.3]  Id:   187
+# Query_time: 0.000185  Lock_time: 0.000045 Rows_sent: 1  Rows_examined: 106
+SET timestamp=1648758238;
+SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='EVENT';
+# Time: 2022-03-31T20:23:58.203182Z
+# User@Host: root[root] @  [172.18.0.3]  Id:   187
+# Query_time: 0.000153  Lock_time: 0.000041 Rows_sent: 1  Rows_examined: 106
+SET timestamp=1648758238;
+SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER';
+# Time: 2022-03-31T20:23:58.209400Z
+# User@Host: root[root] @  [172.18.0.3]  Id:   187
+# Query_time: 0.000158  Lock_time: 0.000042 Rows_sent: 1  Rows_examined: 106
+SET timestamp=1648758238;
+SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='EVENT';
+# Time: 2022-03-31T20:23:58.209628Z
+# User@Host: root[root] @  [172.18.0.3]  Id:   187
+# Query_time: 0.000150  Lock_time: 0.000038 Rows_sent: 1  Rows_examined: 106
+SET timestamp=1648758238;
+SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER';
+# Time: 2022-03-31T20:25:26.204108Z
+# User@Host: root[root] @  [192.168.0.28]  Id:   140
+# Query_time: 13.043259  Lock_time: 0.000141 Rows_sent: 1000000  Rows_examined: 3000000
+SET timestamp=1648758313;
+select * from cliente union select * from cliente;
+# Time: 2022-03-31T20:25:26.215947Z
+# User@Host: root[root] @  [192.168.0.28]  Id:   139
+# Query_time: 0.000093  Lock_time: 0.000041 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1648758326;
+SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 54;
+# Time: 2022-03-31T20:25:26.216562Z
+# User@Host: root[root] @  [192.168.0.28]  Id:   139
+# Query_time: 0.000096  Lock_time: 0.000039 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1648758326;
+SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 54;
+# Time: 2022-03-31T20:27:35.417349Z
+# User@Host: root[root] @  [192.168.0.28]  Id:   140
+# Query_time: 0.004004  Lock_time: 0.000086 Rows_sent: 1000  Rows_examined: 1000
+SET timestamp=1648758455;
+select * from cliente
+LIMIT 0, 1000;
+# Time: 2022-03-31T20:27:35.428431Z
+# User@Host: root[root] @  [192.168.0.28]  Id:   139
+# Query_time: 0.000086  Lock_time: 0.000036 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1648758455;
+SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 57;
+# Time: 2022-03-31T20:27:35.428925Z
+# User@Host: root[root] @  [192.168.0.28]  Id:   139
+# Query_time: 0.000096  Lock_time: 0.000039 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1648758455;
+SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 57;
+# Time: 2022-03-31T20:31:55.196735Z
+# User@Host: root[root] @  [172.18.0.3]  Id:   189
+# Query_time: 0.000322  Lock_time: 0.000167 Rows_sent: 7  Rows_examined: 22
+SET timestamp=1648758715;
+SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`;
+# Time: 2022-03-31T20:41:13.195309Z
+# User@Host: root[root] @  [172.18.0.3]  Id:   191
+# Query_time: 0.000368  Lock_time: 0.000172 Rows_sent: 7  Rows_examined: 22
+SET timestamp=1648759273;
+SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`;
+# Time: 2022-03-31T20:42:41.196379Z
+# User@Host: root[root] @  [172.18.0.3]  Id:   193
+# Query_time: 0.000257  Lock_time: 0.000143 Rows_sent: 7  Rows_examined: 22
+SET timestamp=1648759361;
+SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`;
+# Time: 2022-03-31T20:42:41.200561Z
+# User@Host: root[root] @  [172.18.0.3]  Id:   193
+# Query_time: 0.000166  Lock_time: 0.000045 Rows_sent: 1  Rows_examined: 106
+SET timestamp=1648759361;
+SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='EVENT';
+# Time: 2022-03-31T20:42:41.200834Z
+# User@Host: root[root] @  [172.18.0.3]  Id:   193
+# Query_time: 0.000184  Lock_time: 0.000041 Rows_sent: 1  Rows_examined: 106
+SET timestamp=1648759361;
+SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER';
+# Time: 2022-03-31T20:42:41.207710Z
+# User@Host: root[root] @  [172.18.0.3]  Id:   193
+# Query_time: 0.000197  Lock_time: 0.000053 Rows_sent: 1  Rows_examined: 106
+SET timestamp=1648759361;
+SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='EVENT';
+# Time: 2022-03-31T20:42:41.207979Z
+# User@Host: root[root] @  [172.18.0.3]  Id:   193
+# Query_time: 0.000158  Lock_time: 0.000041 Rows_sent: 1  Rows_examined: 106
+SET timestamp=1648759361;
+SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER';
+# Time: 2022-03-31T20:50:21.209215Z
+# User@Host: root[root] @  [172.18.0.3]  Id:   195
+# Query_time: 0.000362  Lock_time: 0.000201 Rows_sent: 7  Rows_examined: 22
+SET timestamp=1648759821;
+SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`;
+# Time: 2022-03-31T20:52:55.193844Z
+# User@Host: root[root] @  [172.18.0.3]  Id:   197
+# Query_time: 0.000332  Lock_time: 0.000175 Rows_sent: 7  Rows_examined: 22
+SET timestamp=1648759975;
+SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`;
+# Time: 2022-03-31T20:52:57.193280Z
+# User@Host: root[root] @  [172.18.0.3]  Id:   199
+# Query_time: 0.000415  Lock_time: 0.000202 Rows_sent: 7  Rows_examined: 22
+SET timestamp=1648759977;
+SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`;
+/usr/sbin/mysqld, Version: 8.0.16 (MySQL Community Server - GPL). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 8.0.16 (MySQL Community Server - GPL). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2022-04-05T15:35:09.900994Z
+# User@Host: root[root] @  [192.168.0.28]  Id:    10
+# Query_time: 13.603818  Lock_time: 0.000214 Rows_sent: 1000000  Rows_examined: 3000000
+use jardineria;
+SET timestamp=1649172896;
+select * from cliente union select * from cliente;
+/usr/sbin/mysqld, Version: 8.0.16 (MySQL Community Server - GPL). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 8.0.16 (MySQL Community Server - GPL). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2022-04-05T16:36:05.459108Z
+# User@Host: root[root] @  [192.168.0.28]  Id:    10
+# Query_time: 0.000679  Lock_time: 0.000144 Rows_sent: 0  Rows_examined: 0
+use jardineria;
+SET timestamp=1649176565;
+SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 13;
+# Time: 2022-04-05T16:36:05.460265Z
+# User@Host: root[root] @  [192.168.0.28]  Id:    10
+# Query_time: 0.000869  Lock_time: 0.000139 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1649176565;
+SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 13;
+# Time: 2022-04-05T16:36:13.998224Z
+# User@Host: root[root] @  [192.168.0.28]  Id:    10
+# Query_time: 0.000188  Lock_time: 0.000119 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1649176573;
+SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 16;
+# Time: 2022-04-05T16:36:13.998848Z
+# User@Host: root[root] @  [192.168.0.28]  Id:    10
+# Query_time: 0.000156  Lock_time: 0.000093 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1649176573;
+SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 16;
+/usr/sbin/mysqld, Version: 8.0.16 (MySQL Community Server - GPL). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2022-04-05T16:37:43.164212Z
+# User@Host: root[root] @  [192.168.0.28]  Id:    10
+# Query_time: 0.000688  Lock_time: 0.000136 Rows_sent: 0  Rows_examined: 0
+use jardineria;
+SET timestamp=1649176663;
+SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 13;
+# Time: 2022-04-05T16:37:43.165425Z
+# User@Host: root[root] @  [192.168.0.28]  Id:    10
+# Query_time: 0.000870  Lock_time: 0.000140 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1649176663;
+SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 13;
+# Time: 2022-04-05T16:37:48.021224Z
+# User@Host: root[root] @  [192.168.0.28]  Id:     9
+# Query_time: 0.003169  Lock_time: 0.000202 Rows_sent: 1000  Rows_examined: 1000
+SET timestamp=1649176668;
+select * from pedido
+LIMIT 0, 1000;
+# Time: 2022-04-05T16:37:48.028917Z
+# User@Host: root[root] @  [192.168.0.28]  Id:    10
+# Query_time: 0.000105  Lock_time: 0.000052 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1649176668;
+SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 16;
+# Time: 2022-04-05T16:37:48.029379Z
+# User@Host: root[root] @  [192.168.0.28]  Id:    10
+# Query_time: 0.000108  Lock_time: 0.000049 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1649176668;
+SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 16;
+# Time: 2022-04-05T16:44:38.588401Z
+# User@Host: root[root] @  [192.168.0.28]  Id:    10
+# Query_time: 0.000113  Lock_time: 0.000061 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1649177078;
+SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 20;
+# Time: 2022-04-05T16:44:38.588881Z
+# User@Host: root[root] @  [192.168.0.28]  Id:    10
+# Query_time: 0.000125  Lock_time: 0.000049 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1649177078;
+SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 20;
