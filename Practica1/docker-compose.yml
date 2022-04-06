@@ -23,6 +23,9 @@ services:
         volumes:
             - ./dump:/docker-entrypoint-initdb.d
             - persistent:/var/lib/mysql
+            - ./conf/my.cnf:/etc/mysql/my.cnf
+            - ./conf/slow.log:/var/log/mysql/slow.log
+            - ./conf/general.log:/var/log/mysql/general.log
         networks:
             - default
     phpmyadmin:
